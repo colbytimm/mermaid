@@ -157,21 +157,72 @@ architecture-beta
 
 ### Extended Icon Library
 
-The architecture diagram now includes an expanded set of built-in icons for common cloud and architecture patterns:
+The architecture diagram now includes a comprehensive set of built-in icons for all major cloud providers and common architecture patterns:
 
-**AWS Icons:**
+**AWS Icons (17 services):**
 - `lambda` - AWS Lambda functions
-- `s3` - AWS S3 storage
+- `s3` - AWS S3 storage  
 - `ec2` - AWS EC2 instances
 - `rds` - AWS RDS databases
+- `dynamodb` - DynamoDB NoSQL database
+- `apigateway` - API Gateway
+- `cloudfront` - CloudFront CDN
+- `elasticache` - ElastiCache in-memory data store
+- `elb` - Elastic Load Balancer
+- `iam` - Identity and Access Management
+- `kinesis` - Kinesis streaming data
+- `sns` - Simple Notification Service
+- `sqs` - Simple Queue Service
+- `vpc` - Virtual Private Cloud
+- `route53` - Route 53 DNS service
+- `cloudwatch` - CloudWatch monitoring
+- `ecs` - Elastic Container Service
+- `eks` - Elastic Kubernetes Service
+- `fargate` - AWS Fargate
+- `stepfunctions` - Step Functions
+- `eventbridge` - EventBridge
 
-**Azure Icons:**
+**Azure Icons (18 services):**
 - `webapp` - Azure Web Apps
 - `storage` - Azure Storage
 - `function` - Azure Functions
+- `applicationgateway` - Application Gateway
+- `cdn` - Azure CDN
+- `cosmosdb` - Cosmos DB
+- `rediscache` - Redis Cache
+- `loadbalancer` - Load Balancer
+- `activedirectory` - Azure Active Directory
+- `eventhubs` - Event Hubs
+- `servicebus` - Service Bus
+- `virtualnetwork` - Virtual Network
+- `dns` - Azure DNS
+- `monitor` - Azure Monitor
+- `containerinstances` - Container Instances
+- `kubernetes` - Azure Kubernetes Service
+- `containerregistry` - Container Registry
+- `logicapps` - Logic Apps
+- `eventgrid` - Event Grid
+- `devops` - Azure DevOps
 
-**GCP Icons:**
-- `compute` - Google Compute Engine
+**GCP Icons (17 services):**
+- `compute` - Compute Engine
+- `cloudloadbalancing` - Cloud Load Balancing
+- `cloudcdn` - Cloud CDN
+- `cloudsql` - Cloud SQL
+- `memorystore` - Memorystore
+- `cloudiam` - Cloud IAM
+- `pubsub` - Pub/Sub messaging
+- `cloudstorage` - Cloud Storage
+- `cloudvpc` - Virtual Private Cloud
+- `clouddns` - Cloud DNS
+- `cloudmonitoring` - Cloud Monitoring
+- `cloudrun` - Cloud Run
+- `gke` - Google Kubernetes Engine
+- `gcr` - Container Registry
+- `cloudfunctions` - Cloud Functions
+- `workflows` - Workflows
+- `eventarc` - Eventarc
+- `cloudbuild` - Cloud Build
 
 **General IT Icons:**
 - `api` - API services
@@ -184,15 +235,31 @@ The architecture diagram now includes an expanded set of built-in icons for comm
 ```mermaid-example
 architecture-beta
     group aws(cloud)[AWS Cloud]
+    group azure(cloud)[Azure Cloud] 
+    group gcp(cloud)[GCP Cloud]
     
-    service gateway(loadbalancer)[API Gateway] in aws
-    service auth(lambda)[Auth Service] in aws
-    service data(rds)[Database] in aws
-    service cache(cache)[Redis Cache] in aws
+    service awsapi(apigateway)[API Gateway] in aws
+    service awslambda(lambda)[Auth Service] in aws
+    service awsrds(rds)[PostgreSQL] in aws
+    service awscache(elasticache)[Redis] in aws
     
-    gateway:R -- L:auth
-    auth:R -- L:data
-    auth:R -- L:cache
+    service azureapp(webapp)[Web App] in azure
+    service azurefunc(function)[Functions] in azure
+    service azuredb(cosmosdb)[Cosmos DB] in azure
+    
+    service gcprun(cloudrun)[Cloud Run] in gcp
+    service gcpsql(cloudsql)[Cloud SQL] in gcp
+    service gcpstorage(cloudstorage)[Storage] in gcp
+    
+    awsapi:R -- L:awslambda
+    awslambda:R -- L:awsrds
+    awslambda:B -- T:awscache
+    
+    azureapp:R -- L:azurefunc
+    azurefunc:R -- L:azuredb
+    
+    gcprun:R -- L:gcpsql
+    gcprun:B -- T:gcpstorage
 ```
 
 ### Inline Icon Syntax
