@@ -153,6 +153,84 @@ architecture-beta
     bottom_gateway:T -- B:junctionRight
 ```
 
+## Enhanced Features
+
+### Extended Icon Library
+
+The architecture diagram now includes an expanded set of built-in icons for common cloud and architecture patterns:
+
+**AWS Icons:**
+- `lambda` - AWS Lambda functions
+- `s3` - AWS S3 storage
+- `ec2` - AWS EC2 instances
+- `rds` - AWS RDS databases
+
+**Azure Icons:**
+- `webapp` - Azure Web Apps
+- `storage` - Azure Storage
+- `function` - Azure Functions
+
+**GCP Icons:**
+- `compute` - Google Compute Engine
+
+**General IT Icons:**
+- `api` - API services
+- `microservice` - Microservices
+- `queue` - Message queues
+- `cache` - Caching systems
+- `loadbalancer` - Load balancers
+- `monitor` - Monitoring systems
+
+```mermaid-example
+architecture-beta
+    group aws(cloud)[AWS Cloud]
+    
+    service gateway(loadbalancer)[API Gateway] in aws
+    service auth(lambda)[Auth Service] in aws
+    service data(rds)[Database] in aws
+    service cache(cache)[Redis Cache] in aws
+    
+    gateway:R -- L:auth
+    auth:R -- L:data
+    auth:R -- L:cache
+```
+
+### Inline Icon Syntax
+
+You can now embed icons directly within text labels using the `:iconname:` syntax:
+
+```mermaid-example
+architecture-beta
+    group web(cloud)[:cloud: Web Layer]
+    
+    service frontend(webapp)[:api: Frontend App] in web
+    service backend(microservice)[:database: Backend API] in web
+    
+    frontend:R -- L:backend
+```
+
+### Enhanced Edge Styles
+
+Different line styles are now supported to distinguish between different types of connections:
+
+- `--` - Default solid line
+- `---` - Thick line (for primary data flow)
+- `...` - Dotted line (for occasional connections)
+- `-..-` - Dash-dot line (for control flow)
+- `===` - Double line (for high-bandwidth connections)
+
+```mermaid-example
+architecture-beta
+    service client(webapp)[Client]
+    service server(server)[Server] 
+    service db(database)[Database]
+    service cache(cache)[Cache]
+    
+    client:R --- L:server
+    server:R -- L:db
+    server:B ... T:cache
+```
+
 ## Icons
 
 By default, architecture diagram supports the following icons: `cloud`, `database`, `disk`, `internet`, `server`.

@@ -28,7 +28,7 @@ fragment RightPort:
 ;
 
 fragment Arrow:
-    LeftPort lhsInto?=ARROW_INTO? ('--' | '-' title=ARCH_TITLE '-') rhsInto?=ARROW_INTO? RightPort
+    LeftPort lhsInto?=ARROW_INTO? (style=EDGE_STYLE | ('--' | '-' title=ARCH_TITLE '-')) rhsInto?=ARROW_INTO? RightPort
 ;
 
 Group:
@@ -50,3 +50,4 @@ Edge:
 terminal ARROW_DIRECTION: 'L' | 'R' | 'T' | 'B';
 terminal ARROW_GROUP: /\{group\}/;
 terminal ARROW_INTO: /<|>/;
+terminal EDGE_STYLE: '---' | '===' | '...' | '-..-' | '--';

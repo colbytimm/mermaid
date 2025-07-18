@@ -39,5 +39,79 @@ export const architectureIcons: IconifyJSON = {
     blank: {
       body: wrapIcon(''),
     },
+    // AWS Icons
+    lambda: {
+      body: wrapIcon(
+        '<path d="M20,40 L30,20 L40,40 L50,20 L60,40 M25,50 L45,50 M15,30 L65,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="25" y="35" width="30" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
+    s3: {
+      body: wrapIcon(
+        '<rect x="15" y="25" width="50" height="30" rx="3" ry="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="15" y1="35" x2="65" y2="35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="15" y1="45" x2="65" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="22" cy="30" r="1.5" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="22" cy="40" r="1.5" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="22" cy="50" r="1.5" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    ec2: {
+      body: wrapIcon(
+        '<rect x="15" y="20" width="50" height="40" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="25" width="40" height="15" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="25" cy="48" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="48" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="55" cy="48" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    rds: {
+      body: wrapIcon(
+        '<ellipse cx="40" cy="30" rx="22" ry="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><ellipse cx="40" cy="45" rx="22" ry="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="18" y1="30" x2="18" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="62" y1="30" x2="62" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
+    // Azure Icons
+    webapp: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="25" y1="30" x2="55" y2="30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="27" cy="35" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="30" y1="35" x2="50" y2="35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="27" cy="40" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="30" y1="40" x2="45" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="27" cy="45" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="30" y1="45" x2="55" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    storage: {
+      body: wrapIcon(
+        '<rect x="18" y="20" width="44" height="40" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="18" y1="30" x2="62" y2="30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="18" y1="40" x2="62" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="18" y1="50" x2="62" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
+    function: {
+      body: wrapIcon(
+        '<path d="M25,20 Q40,15 55,20 Q55,40 40,45 Q25,40 25,20 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="30" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,35 L45,35 M37,38 L43,38" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    // GCP Icons
+    compute: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="3" ry="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="30" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    // General IT Icons
+    api: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M25,35 L35,30 L35,40 Z M45,30 L55,35 L45,40 Z" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    microservice: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="18" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="32" y1="32" x2="28" y2="28" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="48" y1="32" x2="52" y2="28" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="48" y1="48" x2="52" y2="52" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="32" y1="48" x2="28" y2="52" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    queue: {
+      body: wrapIcon(
+        '<rect x="15" y="30" width="50" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="25" y1="30" x2="25" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="35" y1="30" x2="35" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="45" y1="30" x2="45" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="55" y1="30" x2="55" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cache: {
+      body: wrapIcon(
+        '<rect x="18" y="25" width="44" height="30" rx="15" ry="15" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="35" cy="40" r="4" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="45" cy="40" r="4" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    loadbalancer: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 L50,35 M35,30 L35,40 M45,30 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    monitor: {
+      body: wrapIcon(
+        '<rect x="18" y="22" width="44" height="28" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="24" width="40" height="20" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 L30,35 L35,28 L40,38 L45,25 L50,32 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="50" width="10" height="5" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="30" y1="58" x2="50" y2="58" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
   },
 };
