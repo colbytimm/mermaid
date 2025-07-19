@@ -39,5 +39,549 @@ export const architectureIcons: IconifyJSON = {
     blank: {
       body: wrapIcon(''),
     },
+    // AWS Icons
+    lambda: {
+      body: wrapIcon(
+        '<path d="M20,40 L30,20 L40,40 L50,20 L60,40 M25,50 L45,50 M15,30 L65,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="25" y="35" width="30" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
+    s3: {
+      body: wrapIcon(
+        '<rect x="15" y="25" width="50" height="30" rx="3" ry="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="15" y1="35" x2="65" y2="35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="15" y1="45" x2="65" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="22" cy="30" r="1.5" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="22" cy="40" r="1.5" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="22" cy="50" r="1.5" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    ec2: {
+      body: wrapIcon(
+        '<rect x="15" y="20" width="50" height="40" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="25" width="40" height="15" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="25" cy="48" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="48" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="55" cy="48" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    rds: {
+      body: wrapIcon(
+        '<ellipse cx="40" cy="30" rx="22" ry="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><ellipse cx="40" cy="45" rx="22" ry="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="18" y1="30" x2="18" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="62" y1="30" x2="62" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
+    dynamodb: {
+      body: wrapIcon(
+        '<rect x="15" y="25" width="50" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="25" cy="35" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="35" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="35" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="25" y1="42" x2="25" y2="48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="40" y1="42" x2="40" y2="48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="55" y1="42" x2="55" y2="48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    apigateway: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 L35,30 L35,40 Z M45,30 L50,35 L45,40 Z" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="15" y1="40" x2="20" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="60" y1="40" x2="65" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
+    cloudfront: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="20" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,25 L30,30 M55,25 L50,30 M55,55 L50,50 M25,55 L30,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    elasticache: {
+      body: wrapIcon(
+        '<rect x="18" y="25" width="44" height="30" rx="15" ry="15" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="40" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="40" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,30 Q40,25 50,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    elb: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 L50,35 M35,30 L35,40 M45,30 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    iam: {
+      body: wrapIcon(
+        '<circle cx="40" cy="30" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,45 Q40,40 50,45 L50,55 Q40,60 30,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="37" cy="27" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="43" cy="27" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,32 Q40,35 45,32" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    kinesis: {
+      body: wrapIcon(
+        '<path d="M20,25 Q40,15 60,25 L60,35 Q40,45 20,35 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M20,45 Q40,35 60,45 L60,55 Q40,65 20,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M25,30 L35,30 M30,35 L40,35 M35,40 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    sns: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="5" ry="5" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,45 L35,45 M40,45 L50,45 M55,45 L55,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    sqs: {
+      body: wrapIcon(
+        '<rect x="15" y="30" width="50" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="25" y1="30" x2="25" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="35" y1="30" x2="35" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="45" y1="30" x2="45" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="55" y1="30" x2="55" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M15,35 L10,40 L15,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    vpc: {
+      body: wrapIcon(
+        '<rect x="15" y="20" width="50" height="40" rx="3" ry="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="25" width="20" height="15" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="45" y="25" width="15" height="15" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="20" y="45" width="35" height="10" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    route53: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="20" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 Q40,25 50,30 Q50,40 40,45 Q30,40 30,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,25 L35,35 M55,25 L45,35 M55,55 L45,45 M25,55 L35,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudwatch: {
+      body: wrapIcon(
+        '<rect x="18" y="22" width="44" height="28" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="24" width="40" height="20" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 L30,35 L35,28 L40,38 L45,25 L50,32 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="50" width="10" height="5" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="30" y1="58" x2="50" y2="58" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
+    ecs: {
+      body: wrapIcon(
+        '<rect x="15" y="20" width="50" height="40" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="25" width="15" height="10" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="40" y="25" width="15" height="10" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="20" y="40" width="15" height="10" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="40" y="40" width="15" height="10" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    eks: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="18" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="25" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="25" cy="50" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="50" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="40" y1="28" x2="40" y2="32" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="28" y1="47" x2="32" y2="43" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="52" y1="47" x2="48" y2="43" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    fargate: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,30 50,35 Q50,45 40,50 Q30,45 30,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    stepfunctions: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 L35,35 L30,40 M40,30 L45,35 L40,40 M50,30 L55,35 L50,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="25" y1="45" x2="55" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    eventbridge: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M32,35 Q40,30 48,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,40 L35,40 M45,50 L55,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudformation: {
+      body: wrapIcon(
+        '<rect x="20" y="20" width="40" height="40" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 L50,30 L45,35 L40,30 L35,35 L30,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,40 L50,40 L45,45 L40,40 L35,45 L30,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,50 L50,50 L45,55 L40,50 L35,55 L30,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cognito: {
+      body: wrapIcon(
+        '<circle cx="40" cy="30" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,45 Q40,40 50,45 L50,55 Q40,60 30,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="37" cy="27" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="43" cy="27" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,32 Q40,35 45,32" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="25" y="48" width="30" height="3" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    amplify: {
+      body: wrapIcon(
+        '<path d="M25,55 L40,25 L55,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="32" y1="45" x2="48" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    redshift: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,42 L30,48 M40,42 L40,48 M50,42 L50,48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,50 L55,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    opensearch: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="18" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M35,35 L45,45 M45,35 L35,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M55,55 L60,60 M58,52 L62,56" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    sagemaker: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M32,35 Q36,32 38,40 Q42,38 48,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,47 L35,50 M45,50 L55,47" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    glue: {
+      body: wrapIcon(
+        '<rect x="18" y="25" width="44" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="28" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="52" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M31,35 Q40,30 49,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="38" width="10" height="4" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    athena: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M25,35 L30,30 L35,35 L30,40 Z M45,35 L50,30 L55,35 L50,40 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="35" y1="35" x2="45" y2="35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,45 L35,45 M45,45 L55,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    msk: {
+      body: wrapIcon(
+        '<path d="M20,25 Q40,15 60,25 L60,35 Q40,45 20,35 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M20,45 Q40,35 60,45 L60,55 Q40,65 20,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M25,30 L35,30 M30,35 L40,35 M35,40 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="30" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="50" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><rect x="48" y="38" width="8" height="4" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    appsync: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 L35,30 L35,40 Z M45,30 L50,35 L45,40 Z" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="15" y1="40" x2="20" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="60" y1="40" x2="65" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M35,42 Q40,45 45,42" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    codepipeline: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 L35,35 L30,40 M40,30 L45,35 L40,40 M50,30 L55,35 L50,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="25" y1="45" x2="55" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="25" cy="30" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="30" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    xray: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="18" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 L50,50 M50,30 L30,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    kms: {
+      body: wrapIcon(
+        '<rect x="25" y="30" width="30" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="25" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="40" y1="28" x2="40" y2="30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,40 L45,40 M40,35 L40,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    secretsmanager: {
+      body: wrapIcon(
+        '<rect x="25" y="30" width="30" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="25" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="40" y1="28" x2="40" y2="30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M38,42 L42,38 M38,38 L42,42" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    waf: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,30 50,35 Q50,45 40,50 Q30,45 30,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,30 L30,25 L35,30 M45,30 L50,25 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    // Azure Icons
+    webapp: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="25" y1="30" x2="55" y2="30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="27" cy="35" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="30" y1="35" x2="50" y2="35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="27" cy="40" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="30" y1="40" x2="45" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="27" cy="45" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="30" y1="45" x2="55" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    storage: {
+      body: wrapIcon(
+        '<rect x="18" y="20" width="44" height="40" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="18" y1="30" x2="62" y2="30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="18" y1="40" x2="62" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="18" y1="50" x2="62" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
+    function: {
+      body: wrapIcon(
+        '<path d="M25,20 Q40,15 55,20 Q55,40 40,45 Q25,40 25,20 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="30" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,35 L45,35 M37,38 L43,38" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    applicationgateway: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 L35,30 L35,40 Z M45,30 L50,35 L45,40 Z" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="15" y1="40" x2="20" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="60" y1="40" x2="65" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="35" y="45" width="10" height="5" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cdn: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="20" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,25 L30,30 M55,25 L50,30 M55,55 L50,50 M25,55 L30,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="35" width="10" height="10" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cosmosdb: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="20" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><ellipse cx="40" cy="30" rx="12" ry="4" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><ellipse cx="40" cy="40" rx="12" ry="4" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><ellipse cx="40" cy="50" rx="12" ry="4" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    rediscache: {
+      body: wrapIcon(
+        '<rect x="18" y="25" width="44" height="30" rx="15" ry="15" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="40" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="40" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,30 Q40,25 50,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,40 L30,35 L30,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    loadbalancer: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 L50,35 M35,30 L35,40 M45,30 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    activedirectory: {
+      body: wrapIcon(
+        '<circle cx="40" cy="30" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,45 Q40,40 50,45 L50,55 Q40,60 30,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="37" cy="27" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="43" cy="27" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,32 Q40,35 45,32" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="48" width="10" height="5" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    eventhubs: {
+      body: wrapIcon(
+        '<path d="M20,25 Q40,15 60,25 L60,35 Q40,45 20,35 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M20,45 Q40,35 60,45 L60,55 Q40,65 20,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M25,30 L35,30 M30,35 L40,35 M35,40 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="30" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    servicebus: {
+      body: wrapIcon(
+        '<rect x="15" y="30" width="50" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="25" y1="30" x2="25" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="35" y1="30" x2="35" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="45" y1="30" x2="45" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="55" y1="30" x2="55" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M15,35 L10,40 L15,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="60" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    virtualnetwork: {
+      body: wrapIcon(
+        '<rect x="15" y="20" width="50" height="40" rx="3" ry="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="25" width="20" height="15" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="45" y="25" width="15" height="15" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="20" y="45" width="35" height="10" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="25" cy="32" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    dns: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="20" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 Q40,25 50,30 Q50,40 40,45 Q30,40 30,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,25 L35,35 M55,25 L45,35 M55,55 L45,45 M25,55 L35,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    monitor: {
+      body: wrapIcon(
+        '<rect x="18" y="22" width="44" height="28" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="24" width="40" height="20" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 L30,35 L35,28 L40,38 L45,25 L50,32 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="50" width="10" height="5" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="30" y1="58" x2="50" y2="58" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
+    containerinstances: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="25" y="30" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="40" y="30" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="25" y="42" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="40" y="42" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    kubernetes: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="18" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="25" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="25" cy="50" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="50" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="40" y1="28" x2="40" y2="32" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="28" y1="47" x2="32" y2="43" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="52" y1="47" x2="48" y2="43" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    containerregistry: {
+      body: wrapIcon(
+        '<rect x="20" y="20" width="40" height="40" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="25" y="25" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="40" y="25" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="25" y="37" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="40" y="37" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="25" y="49" width="25" height="6" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    logicapps: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 L35,35 L30,40 M40,30 L45,35 L40,40 M50,30 L55,35 L50,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="25" y1="45" x2="55" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="30" cy="47" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    eventgrid: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M32,35 Q40,30 48,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,40 L35,40 M45,50 L55,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="35" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    devops: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M33,35 L47,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 L30,25 L35,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M45,50 L50,55 L55,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    keyvault: {
+      body: wrapIcon(
+        '<rect x="25" y="30" width="30" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="25" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="40" y1="28" x2="40" y2="30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,40 L45,40 M40,35 L40,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="30" y="35" width="20" height="3" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    apim: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 L35,30 L35,40 Z M45,30 L50,35 L45,40 Z" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="15" y1="40" x2="20" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="60" y1="40" x2="65" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="32" y="45" width="16" height="3" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    appinsights: {
+      body: wrapIcon(
+        '<rect x="18" y="22" width="44" height="28" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="24" width="40" height="20" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 L30,35 L35,28 L40,38 L45,25 L50,32 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="50" width="10" height="5" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="30" y1="58" x2="50" y2="58" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="55" cy="20" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    trafficmanager: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="20" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 Q40,25 50,30 Q50,40 40,45 Q30,40 30,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,25 L35,35 M55,25 L45,35 M55,55 L45,45 M25,55 L35,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="25" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    frontdoor: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,30 50,35 Q50,45 40,50 Q30,45 30,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,30 L30,25 L35,30 M45,30 L50,25 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M15,40 L20,40 M60,40 L65,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>'
+      ),
+    },
+    datafactory: {
+      body: wrapIcon(
+        '<rect x="18" y="25" width="44" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="28" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="52" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M31,35 Q40,30 49,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="38" width="10" height="4" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M22,30 L28,30 M52,50 L58,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    synapse: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,42 L30,48 M40,42 L40,48 M50,42 L50,48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,50 L55,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="35" cy="30" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="45" cy="30" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    cognitiveservices: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M32,35 Q36,32 38,40 Q42,38 48,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,47 L35,50 M45,50 L55,47" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="30" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    iothub: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="18" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="32" y1="32" x2="28" y2="28" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="48" y1="32" x2="52" y2="28" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="48" y1="48" x2="52" y2="52" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="32" y1="48" x2="28" y2="52" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="37" y="37" width="6" height="6" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    automation: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M33,35 L47,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 L30,25 L35,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M45,50 L50,55 L55,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="32" width="10" height="3" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    policy: {
+      body: wrapIcon(
+        '<rect x="20" y="20" width="40" height="40" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 L50,30 L45,35 L40,30 L35,35 L30,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,40 L50,40 L45,45 L40,40 L35,45 L30,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,50 L50,50 L45,55 L40,50 L35,55 L30,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="25" cy="25" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    sentinel: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,30 50,35 Q50,45 40,50 Q30,45 30,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,30 L30,25 L35,30 M45,30 L50,25 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="35" cy="35" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="45" cy="45" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    backup: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,30 50,35 Q50,45 40,50 Q30,45 30,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,35 L45,45 M45,35 L35,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    firewall: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,30 50,35 Q50,45 40,50 Q30,45 30,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,30 L30,25 L35,30 M45,30 L50,25 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,50 L35,40 M55,50 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    vpngateway: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,30 50,35 Q50,45 40,50 Q30,45 30,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M15,40 L20,40 M60,40 L65,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M25,30 L30,25 L35,30 M45,30 L50,25 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    // GCP Icons
+    compute: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="3" ry="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="30" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudloadbalancing: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 L50,35 M35,30 L35,40 M45,30 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,30 L35,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudcdn: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="20" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,25 L30,30 M55,25 L50,30 M55,55 L50,50 M25,55 L30,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M32,32 L48,48 M48,32 L32,48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudsql: {
+      body: wrapIcon(
+        '<ellipse cx="40" cy="30" rx="20" ry="6" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><ellipse cx="40" cy="45" rx="20" ry="6" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="20" y1="30" x2="20" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="60" y1="30" x2="60" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,32 50,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    memorystore: {
+      body: wrapIcon(
+        '<rect x="18" y="25" width="44" height="30" rx="15" ry="15" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="40" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="40" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,30 Q40,25 50,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,50 Q40,55 50,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudiam: {
+      body: wrapIcon(
+        '<circle cx="40" cy="30" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,45 Q40,40 50,45 L50,55 Q40,60 30,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="37" cy="27" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="43" cy="27" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,32 Q40,35 45,32" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="25" cy="25" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="55" cy="25" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    pubsub: {
+      body: wrapIcon(
+        '<path d="M20,25 Q40,15 60,25 L60,35 Q40,45 20,35 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M20,45 Q40,35 60,45 L60,55 Q40,65 20,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M25,30 L35,30 M30,35 L40,35 M35,40 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="30" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="50" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    cloudstorage: {
+      body: wrapIcon(
+        '<rect x="15" y="25" width="50" height="30" rx="3" ry="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="15" y1="35" x2="65" y2="35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="15" y1="45" x2="65" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="22" cy="30" r="1.5" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="22" cy="40" r="1.5" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="22" cy="50" r="1.5" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M55,30 Q58,32 55,34" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudvpc: {
+      body: wrapIcon(
+        '<rect x="15" y="20" width="50" height="40" rx="3" ry="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="25" width="20" height="15" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="45" y="25" width="15" height="15" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="20" y="45" width="35" height="10" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,32 Q30,27 35,32" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    clouddns: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="20" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 Q40,25 50,30 Q50,40 40,45 Q30,40 30,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,25 L35,35 M55,25 L45,35 M55,55 L45,45 M25,55 L35,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,50 Q40,47 50,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudmonitoring: {
+      body: wrapIcon(
+        '<rect x="18" y="22" width="44" height="28" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="20" y="24" width="40" height="20" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 L30,35 L35,28 L40,38 L45,25 L50,32 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="50" width="10" height="5" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="30" y1="58" x2="50" y2="58" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="25" cy="20" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudrun: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,30 50,35 Q50,45 40,50 Q30,45 30,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,30 L30,25 L35,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    gke: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="18" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="25" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="25" cy="50" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="50" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="40" y1="28" x2="40" y2="32" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="28" y1="47" x2="32" y2="43" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="52" y1="47" x2="48" y2="43" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M35,35 Q40,32 45,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    gcr: {
+      body: wrapIcon(
+        '<rect x="20" y="20" width="40" height="40" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="25" y="25" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="40" y="25" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="25" y="37" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="40" y="37" width="10" height="8" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="25" y="49" width="25" height="6" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="55" cy="25" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudfunctions: {
+      body: wrapIcon(
+        '<path d="M25,20 Q40,15 55,20 Q55,40 40,45 Q25,40 25,20 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="30" r="3" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,35 L45,35 M37,38 L43,38" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,25 Q40,22 50,25" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    workflows: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,30 L35,35 L30,40 M40,30 L45,35 L40,40 M50,30 L55,35 L50,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="25" y1="45" x2="55" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="25" cy="30" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    eventarc: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M32,35 Q40,30 48,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,40 L35,40 M45,50 L55,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="35" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M30,50 Q40,47 50,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudbuild: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M33,35 L47,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 L30,25 L35,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M45,50 L50,55 L55,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="25" y="32" width="10" height="3" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    appengine: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="25" y1="30" x2="55" y2="30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="27" cy="35" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="30" y1="35" x2="50" y2="35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="27" cy="40" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="30" y1="40" x2="45" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="27" cy="45" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="30" y1="45" x2="55" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M50,30 Q55,32 50,34" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    bigquery: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,42 L30,48 M40,42 L40,48 M50,42 L50,48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,50 L55,50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 Q40,25 55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    dataflow: {
+      body: wrapIcon(
+        '<path d="M20,25 Q40,15 60,25 L60,35 Q40,45 20,35 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M20,45 Q40,35 60,45 L60,55 Q40,65 20,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M25,30 L35,30 M30,35 L40,35 M35,40 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="30" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="50" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M48,35 Q52,32 56,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    firebase: {
+      body: wrapIcon(
+        '<path d="M25,55 L40,25 L55,55 Z" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="32" y1="45" x2="48" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M30,35 Q40,30 50,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    bigtable: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="25" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="35" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="45" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><line x1="25" y1="40" x2="25" y2="48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="35" y1="40" x2="35" y2="48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="45" y1="40" x2="45" y2="48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="55" y1="40" x2="55" y2="48" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    spanner: {
+      body: wrapIcon(
+        '<ellipse cx="40" cy="30" rx="20" ry="6" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><ellipse cx="40" cy="45" rx="20" ry="6" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="20" y1="30" x2="20" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="60" y1="30" x2="60" y2="45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,32 50,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="25" cy="37" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="55" cy="37" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    aiplatform: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M32,35 Q36,32 38,40 Q42,38 48,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,47 L35,50 M45,50 L55,47" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 Q40,25 55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudarmor: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 Q40,30 50,35 Q50,45 40,50 Q30,45 30,35" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M25,30 L30,25 L35,30 M45,30 L50,25 L55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,50 L35,40 M55,50 L45,40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="35" cy="35" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    secretmanager: {
+      body: wrapIcon(
+        '<rect x="25" y="30" width="30" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="25" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="40" y1="28" x2="40" y2="30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M38,42 L42,38 M38,38 L42,42" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,35 Q20,40 25,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cloudkms: {
+      body: wrapIcon(
+        '<rect x="25" y="30" width="30" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="25" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="40" y1="28" x2="40" y2="30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M35,40 L45,40 M40,35 L40,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="25" cy="25" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="55" cy="25" r="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    endpoints: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M30,35 L35,30 L35,40 Z M45,30 L50,35 L45,40 Z" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="15" y1="40" x2="20" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="60" y1="40" x2="65" y2="40" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="32" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="48" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    iotcore: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="18" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="32" y1="32" x2="28" y2="28" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="48" y1="32" x2="52" y2="28" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="48" y1="48" x2="52" y2="52" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="32" y1="48" x2="28" y2="52" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="37" y="37" width="6" height="6" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="30" cy="30" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="50" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    automl: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="40" cy="40" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="50" cy="45" r="2" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><path d="M32,35 Q36,32 38,40 Q42,38 48,45" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,47 L35,50 M45,50 L55,47" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M25,30 Q40,25 55,30" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="35" y="30" width="10" height="3" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    firestore: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><rect x="25" y="30" width="30" height="5" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="25" y="37" width="30" height="5" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><rect x="25" y="44" width="30" height="5" rx="1" ry="1" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="27" cy="32" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="27" cy="39" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/><circle cx="27" cy="46" r="1" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10;"/>'
+      ),
+    },
+    dataproc: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="30" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="40" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="50" cy="35" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="35" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="45" cy="45" r="3" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><path d="M30,38 L35,42 M40,38 L35,42 M40,38 L45,42 M50,38 L45,42" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    // General IT Icons
+    api: {
+      body: wrapIcon(
+        '<rect x="20" y="25" width="40" height="30" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><path d="M25,35 L35,30 L35,40 Z M45,30 L55,35 L45,40 Z" style="fill: #fff; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    microservice: {
+      body: wrapIcon(
+        '<circle cx="40" cy="40" r="18" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="40" cy="40" r="8" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="32" y1="32" x2="28" y2="28" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="48" y1="32" x2="52" y2="28" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="48" y1="48" x2="52" y2="52" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="32" y1="48" x2="28" y2="52" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    queue: {
+      body: wrapIcon(
+        '<rect x="15" y="30" width="50" height="20" rx="2" ry="2" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><line x1="25" y1="30" x2="25" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="35" y1="30" x2="35" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="45" y1="30" x2="45" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><line x1="55" y1="30" x2="55" y2="50" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
+    cache: {
+      body: wrapIcon(
+        '<rect x="18" y="25" width="44" height="30" rx="15" ry="15" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/><circle cx="35" cy="40" r="4" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/><circle cx="45" cy="40" r="4" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1px;"/>'
+      ),
+    },
   },
 };

@@ -153,6 +153,206 @@ architecture-beta
     bottom_gateway:T -- B:junctionRight
 ```
 
+## Enhanced Features
+
+### Extended Icon Library
+
+The architecture diagram now includes a comprehensive set of built-in icons for all major cloud providers and common architecture patterns:
+
+**AWS Icons (36 services):**
+- `lambda` - AWS Lambda functions
+- `s3` - AWS S3 storage  
+- `ec2` - AWS EC2 instances
+- `rds` - AWS RDS databases
+- `dynamodb` - DynamoDB NoSQL database
+- `apigateway` - API Gateway
+- `cloudfront` - CloudFront CDN
+- `elasticache` - ElastiCache in-memory data store
+- `elb` - Elastic Load Balancer
+- `iam` - Identity and Access Management
+- `kinesis` - Kinesis streaming data
+- `sns` - Simple Notification Service
+- `sqs` - Simple Queue Service
+- `vpc` - Virtual Private Cloud
+- `route53` - Route 53 DNS service
+- `cloudwatch` - CloudWatch monitoring
+- `ecs` - Elastic Container Service
+- `eks` - Elastic Kubernetes Service
+- `fargate` - AWS Fargate
+- `stepfunctions` - Step Functions
+- `eventbridge` - EventBridge
+- `cloudformation` - CloudFormation IaC
+- `cognito` - Cognito authentication
+- `amplify` - Amplify frontend platform
+- `redshift` - Redshift data warehouse
+- `opensearch` - OpenSearch analytics
+- `sagemaker` - SageMaker ML platform
+- `glue` - Glue ETL service
+- `athena` - Athena query service
+- `msk` - Managed Streaming for Kafka
+- `appsync` - AppSync GraphQL
+- `codepipeline` - CodePipeline CI/CD
+- `xray` - X-Ray distributed tracing
+- `kms` - Key Management Service
+- `secretsmanager` - Secrets Manager
+- `waf` - Web Application Firewall
+
+**Azure Icons (34 services):**
+- `webapp` - Azure Web Apps
+- `storage` - Azure Storage
+- `function` - Azure Functions
+- `applicationgateway` - Application Gateway
+- `cdn` - Azure CDN
+- `cosmosdb` - Cosmos DB
+- `rediscache` - Redis Cache
+- `loadbalancer` - Load Balancer
+- `activedirectory` - Azure Active Directory
+- `eventhubs` - Event Hubs
+- `servicebus` - Service Bus
+- `virtualnetwork` - Virtual Network
+- `dns` - Azure DNS
+- `monitor` - Azure Monitor
+- `containerinstances` - Container Instances
+- `kubernetes` - Azure Kubernetes Service
+- `containerregistry` - Container Registry
+- `logicapps` - Logic Apps
+- `eventgrid` - Event Grid
+- `devops` - Azure DevOps
+- `keyvault` - Key Vault
+- `apim` - API Management
+- `appinsights` - Application Insights
+- `trafficmanager` - Traffic Manager
+- `frontdoor` - Front Door CDN/WAF
+- `datafactory` - Data Factory ETL
+- `synapse` - Synapse Analytics
+- `cognitiveservices` - Cognitive Services AI
+- `iothub` - IoT Hub
+- `automation` - Automation Account
+- `policy` - Azure Policy
+- `sentinel` - Sentinel SIEM
+- `backup` - Backup service
+- `firewall` - Azure Firewall
+- `vpngateway` - VPN Gateway
+
+**GCP Icons (33 services):**
+- `compute` - Compute Engine
+- `cloudloadbalancing` - Cloud Load Balancing
+- `cloudcdn` - Cloud CDN
+- `cloudsql` - Cloud SQL
+- `memorystore` - Memorystore
+- `cloudiam` - Cloud IAM
+- `pubsub` - Pub/Sub messaging
+- `cloudstorage` - Cloud Storage
+- `cloudvpc` - Virtual Private Cloud
+- `clouddns` - Cloud DNS
+- `cloudmonitoring` - Cloud Monitoring
+- `cloudrun` - Cloud Run
+- `gke` - Google Kubernetes Engine
+- `gcr` - Container Registry
+- `cloudfunctions` - Cloud Functions
+- `workflows` - Workflows
+- `eventarc` - Eventarc
+- `cloudbuild` - Cloud Build
+- `appengine` - App Engine PaaS
+- `bigquery` - BigQuery data warehouse
+- `dataflow` - Dataflow stream processing
+- `firebase` - Firebase mobile backend
+- `bigtable` - BigTable NoSQL
+- `spanner` - Spanner global SQL
+- `aiplatform` - AI Platform ML
+- `cloudarmor` - Cloud Armor security
+- `secretmanager` - Secret Manager
+- `cloudkms` - Cloud Key Management
+- `endpoints` - Cloud Endpoints API
+- `iotcore` - IoT Core
+- `automl` - AutoML
+- `firestore` - Firestore document DB
+- `dataproc` - Dataproc big data
+
+**General IT Icons:**
+- `api` - API services
+- `microservice` - Microservices
+- `queue` - Message queues
+- `cache` - Caching systems
+
+```mermaid-example
+architecture-beta
+    group aws(cloud)[AWS Cloud]
+    group azure(cloud)[Azure Cloud] 
+    group gcp(cloud)[GCP Cloud]
+    
+    service awsapi(apigateway)[API Gateway] in aws
+    service awslambda(lambda)[Auth Service] in aws
+    service awsrds(rds)[PostgreSQL] in aws
+    service awscache(elasticache)[Redis] in aws
+    service awscognito(cognito)[User Auth] in aws
+    service awsml(sagemaker)[ML Models] in aws
+    
+    service azureapp(webapp)[Web App] in azure
+    service azurefunc(function)[Functions] in azure
+    service azuredb(cosmosdb)[Cosmos DB] in azure
+    service azurekeyvault(keyvault)[Key Vault] in azure
+    service azureai(cognitiveservices)[AI Services] in azure
+    
+    service gcprun(cloudrun)[Cloud Run] in gcp
+    service gcpsql(cloudsql)[Cloud SQL] in gcp
+    service gcpstorage(cloudstorage)[Storage] in gcp
+    service gcpbq(bigquery)[BigQuery] in gcp
+    service gcpai(aiplatform)[AI Platform] in gcp
+    
+    awsapi:R -- L:awslambda
+    awslambda:R -- L:awsrds
+    awslambda:B -- T:awscache
+    awslambda:T -- B:awscognito
+    awsml:L -- R:awsrds
+    
+    azureapp:R -- L:azurefunc
+    azurefunc:R -- L:azuredb
+    azurefunc:T -- B:azurekeyvault
+    azureai:L -- R:azuredb
+    
+    gcprun:R -- L:gcpsql
+    gcprun:B -- T:gcpstorage
+    gcpbq:L -- R:gcpsql
+    gcpai:L -- R:gcpbq
+```
+
+### Inline Icon Syntax
+
+You can now embed icons directly within text labels using the `:iconname:` syntax:
+
+```mermaid-example
+architecture-beta
+    group web(cloud)[:cloud: Web Layer]
+    
+    service frontend(webapp)[:api: Frontend App] in web
+    service backend(microservice)[:database: Backend API] in web
+    
+    frontend:R -- L:backend
+```
+
+### Enhanced Edge Styles
+
+Different line styles are now supported to distinguish between different types of connections:
+
+- `--` - Default solid line
+- `---` - Thick line (for primary data flow)
+- `...` - Dotted line (for occasional connections)
+- `-..-` - Dash-dot line (for control flow)
+- `===` - Double line (for high-bandwidth connections)
+
+```mermaid-example
+architecture-beta
+    service client(webapp)[Client]
+    service server(server)[Server] 
+    service db(database)[Database]
+    service cache(cache)[Cache]
+    
+    client:R --- L:server
+    server:R -- L:db
+    server:B ... T:cache
+```
+
 ## Icons
 
 By default, architecture diagram supports the following icons: `cloud`, `database`, `disk`, `internet`, `server`.

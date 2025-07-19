@@ -240,6 +240,7 @@ export interface ArchitectureEdge<DT = ArchitectureDirection> {
   rhsInto?: boolean;
   rhsGroup?: boolean;
   title?: string;
+  style?: string;
 }
 
 export interface ArchitectureDB extends DiagramDBBase<ArchitectureDiagramConfig> {
@@ -309,6 +310,7 @@ export interface EdgeSingularData {
   targetDir: ArchitectureDirection;
   targetArrow?: boolean;
   targetGroup?: boolean;
+  style?: string;
   [key: string]: any;
 }
 

@@ -21,6 +21,56 @@ import {
   type ArchitectureService,
 } from './architectureTypes.js';
 
+/**
+ * Processes text with inline icon syntax and returns HTML with embedded icons
+ * Supports syntax like :database:, :cloud:, :api: etc.
+ */
+const processInlineIcons = async (text: string, iconSize: number = 16): Promise<string> => {
+  const iconRegex = /:([a-zA-Z0-9-_]+):/g;
+  let processedText = text;
+  const matches = [...text.matchAll(iconRegex)];
+  
+  for (const match of matches) {
+    const iconName = match[1];
+    try {
+      const iconSVG = await getIconSVG(iconName, { 
+        height: iconSize, 
+        width: iconSize, 
+        fallbackPrefix: architectureIcons.prefix 
+      });
+      // Replace the :iconName: with inline SVG
+      processedText = processedText.replace(
+        match[0], 
+        `<span style="display: inline-block; vertical-align: middle; width: ${iconSize}px; height: ${iconSize}px;">${iconSVG}</span>`
+      );
+    } catch (error) {
+      // If icon doesn't exist, leave the original text
+      console.warn(`Icon ${iconName} not found, keeping original text`);
+    }
+  }
+  
+  return processedText;
+};
+
+/**
+ * Gets the CSS class and stroke-dasharray for different edge styles
+ */
+const getEdgeStyle = (style?: string) => {
+  switch (style) {
+    case '---': // thick line
+      return { class: 'edge edge-thick', strokeDasharray: 'none', strokeWidth: '3px' };
+    case '===': // double line
+      return { class: 'edge edge-double', strokeDasharray: 'none', strokeWidth: '1px' };
+    case '...': // dotted line
+      return { class: 'edge edge-dotted', strokeDasharray: '2,2', strokeWidth: '1px' };
+    case '-..-': // dash-dot line
+      return { class: 'edge edge-dashdot', strokeDasharray: '8,2,2,2', strokeWidth: '1px' };
+    case '--': // default
+    default:
+      return { class: 'edge', strokeDasharray: 'none', strokeWidth: '1px' };
+  }
+};
+
 export const drawEdges = async function (edgesEl: D3Element, cy: cytoscape.Core) {
   const padding = getConfigField('padding');
   const iconSize = getConfigField('iconSize');
@@ -40,6 +90,7 @@ export const drawEdges = async function (edgesEl: D3Element, cy: cytoscape.Core)
         targetArrow,
         targetGroup,
         label,
+        style,
       } = edgeData(edge);
       let { x: startX, y: startY } = edge[0].sourceEndpoint();
       const { x: midX, y: midY } = edge[0].midpoint();
@@ -84,10 +135,18 @@ export const drawEdges = async function (edgesEl: D3Element, cy: cytoscape.Core)
         // const bounds = edge[0]._private.rscratch;
 
         const g = edgesEl.insert('g');
+        const edgeStyleInfo = getEdgeStyle(style);
 
-        g.insert('path')
+        const pathElement = g.insert('path')
           .attr('d', `M ${startX},${startY} L ${midX},${midY} L${endX},${endY} `)
-          .attr('class', 'edge');
+          .attr('class', edgeStyleInfo.class);
+          
+        if (edgeStyleInfo.strokeDasharray !== 'none') {
+          pathElement.attr('stroke-dasharray', edgeStyleInfo.strokeDasharray);
+        }
+        if (edgeStyleInfo.strokeWidth !== '1px') {
+          pathElement.attr('stroke-width', edgeStyleInfo.strokeWidth);
+        }
 
         if (sourceArrow) {
           const xShift = isArchitectureDirectionX(sourceDir)
@@ -270,24 +329,48 @@ export const drawServices = async function (
 
     if (service.title) {
       const textElem = serviceElem.append('g');
-      await createText(
-        textElem,
-        service.title,
-        {
-          useHtmlLabels: false,
-          width: iconSize * 1.5,
-          classes: 'architecture-service-label',
-        },
-        getConfig()
-      );
+      
+      // Process inline icon syntax
+      const processedTitle = await processInlineIcons(service.title, 14);
+      const hasInlineIcons = processedTitle !== service.title;
+      
+      if (hasInlineIcons) {
+        // Use HTML labels for inline icons
+        const fo = textElem
+          .append('foreignObject')
+          .attr('width', iconSize * 1.5)
+          .attr('height', iconSize * 0.5);
+        
+        fo.append('div')
+          .attr('class', 'architecture-service-label')
+          .style('text-align', 'center')
+          .style('font-family', 'inherit')
+          .style('font-size', '12px')
+          .style('color', 'inherit')
+          .html(processedTitle);
+          
+        textElem.attr('transform', 'translate(' + iconSize / 2 + ', ' + iconSize + ')');
+      } else {
+        // Use regular text rendering for plain text
+        await createText(
+          textElem,
+          service.title,
+          {
+            useHtmlLabels: false,
+            width: iconSize * 1.5,
+            classes: 'architecture-service-label',
+          },
+          getConfig()
+        );
 
-      textElem
-        .attr('dy', '1em')
-        .attr('alignment-baseline', 'middle')
-        .attr('dominant-baseline', 'middle')
-        .attr('text-anchor', 'middle');
+        textElem
+          .attr('dy', '1em')
+          .attr('alignment-baseline', 'middle')
+          .attr('dominant-baseline', 'middle')
+          .attr('text-anchor', 'middle');
 
-      textElem.attr('transform', 'translate(' + iconSize / 2 + ', ' + iconSize + ')');
+        textElem.attr('transform', 'translate(' + iconSize / 2 + ', ' + iconSize + ')');
+      }
     }
 
     const bkgElem = serviceElem.append('g');

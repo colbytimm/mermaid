@@ -9,6 +9,30 @@ const getStyles: DiagramStylesProvider = (options: ArchitectureStyleOptions) =>
     fill: none;
   }
 
+  .edge-thick {
+    stroke-width: 3px;
+    stroke: ${options.archEdgeColor};
+    fill: none;
+  }
+
+  .edge-dotted {
+    stroke-width: ${options.archEdgeWidth};
+    stroke: ${options.archEdgeColor};
+    fill: none;
+  }
+
+  .edge-dashdot {
+    stroke-width: ${options.archEdgeWidth};
+    stroke: ${options.archEdgeColor};
+    fill: none;
+  }
+
+  .edge-double {
+    stroke-width: ${options.archEdgeWidth};
+    stroke: ${options.archEdgeColor};
+    fill: none;
+  }
+
   .arrow {
     fill: ${options.archEdgeArrowColor};
   }
